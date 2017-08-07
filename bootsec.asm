@@ -54,7 +54,7 @@ decompress:
 	jmp .next
 
 .literal:
-	; len++
+	; cl = len
 	mov cl, ah
 
 	; while (len--) { *op++ = *ip++; }
